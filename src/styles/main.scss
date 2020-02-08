@@ -2,7 +2,36 @@
 @import "fonts";
 @import "typography";
 
-body {
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  margin: 10px auto;
+  max-width: 100vh;
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  &__large-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__img {
+    padding: 5px;
+    border: 3px solid #e6e5e6;
+    &:hover {
+      box-shadow: 0 0 7px rgb(90, 90, 90);
+    }
+  }
+  &__thumb {
+    max-width: 20vh;
+  }
+}
+
+.list-item {
+  display: inline-block;
 }
