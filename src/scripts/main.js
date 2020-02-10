@@ -5,7 +5,7 @@ const largeImg = document.querySelector('#largeImg');
 let current = 0;
 const count = thumbs.length;
 
-[].forEach.call(thumbs, function(thumb, n) {
+thumbs.forEach(function(thumb, n) {
   thumb.addEventListener('click', function() {
     event.preventDefault();
     showPhoto(n);
